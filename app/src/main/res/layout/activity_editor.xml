@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".editor.EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="4dp" >
+
+        <TextView
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="25sp"
+            android:padding="12dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top|start"
+            android:hint="멤버들에게 전할 소식을 남기세요."
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:minLines="8"
+            android:padding="12dp"
+            android:textColor="#1D1D1D" />
+
+        <Spinner
+            android:id="@+id/et_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-12dp"
+            android:layout_marginRight="-12dp"
+            android:layout_marginBottom="16dp"
+            android:spinnerMode="dropdown" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/et_constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_gallery_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_sticker_img"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/iv_sticker_img"
+                app:srcCompat="@drawable/et_gallery_icon" />
+
+            <ImageView
+                android:id="@+id/iv_sticker_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/et_sticker_icon" />
+
+            <ImageView
+                android:id="@+id/iv_link_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toEndOf="@+id/iv_sticker_img"
+                app:layout_constraintTop_toTopOf="@+id/iv_sticker_img"
+                app:srcCompat="@drawable/et_link_icon" />
+
+            <ImageView
+                android:id="@+id/iv_vote_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintEnd_toEndOf="@+id/iv_gallery_img"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/iv_gallery_img"
+                app:layout_constraintTop_toTopOf="@+id/iv_video_img"
+                app:srcCompat="@drawable/et_vote_icon" />
+
+            <ImageView
+                android:id="@+id/iv_video_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:padding="3dp"
+                app:layout_constraintEnd_toEndOf="@+id/iv_sticker_img"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/iv_sticker_img"
+                app:layout_constraintTop_toBottomOf="@+id/iv_sticker_img"
+                app:srcCompat="@drawable/et_video_icon" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="사진"
+                app:layout_constraintEnd_toEndOf="@+id/iv_gallery_img"
+                app:layout_constraintStart_toStartOf="@+id/iv_gallery_img"
+                app:layout_constraintTop_toBottomOf="@+id/iv_gallery_img" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="스티커"
+                app:layout_constraintEnd_toEndOf="@+id/iv_sticker_img"
+                app:layout_constraintStart_toStartOf="@+id/iv_sticker_img"
+                app:layout_constraintTop_toBottomOf="@+id/iv_sticker_img" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="링크"
+                app:layout_constraintEnd_toEndOf="@+id/iv_link_img"
+                app:layout_constraintStart_toStartOf="@+id/iv_link_img"
+                app:layout_constraintTop_toBottomOf="@+id/iv_link_img" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="투표"
+                app:layout_constraintEnd_toEndOf="@+id/iv_vote_img"
+                app:layout_constraintStart_toStartOf="@+id/iv_vote_img"
+                app:layout_constraintTop_toBottomOf="@+id/iv_vote_img" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="동영상"
+                app:layout_constraintEnd_toEndOf="@+id/iv_video_img"
+                app:layout_constraintStart_toStartOf="@+id/iv_video_img"
+                app:layout_constraintTop_toBottomOf="@+id/iv_video_img" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/et_constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+        >
+
+            <ImageView
+                android:id="@+id/iv_selected_image"
+                android:layout_width="match_parent"
+                android:layout_height="205dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tv_imageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="noImage"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/iv_selected_image" />
+
+            <ImageButton
+                android:id="@+id/del_image_btn"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@android:drawable/btn_dialog" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

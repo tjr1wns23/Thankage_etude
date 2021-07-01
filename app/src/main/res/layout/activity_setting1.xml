@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    tools:context=".fragments.setting.SettingActivity1">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="18dp"
+        android:text="언어 설정"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border_up_and_down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:text="언어 설정"
+            android:textColor="#262626" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="한국어  " />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="알림 설정"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/s1_switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/border_up_and_down"
+        android:text="          퀴즈 이벤트 효과음"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/s1_switch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom_only"
+        android:text="          퀴즈 이벤트 배경음"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s1_switch1" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/s1_switch3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom_only"
+        android:text="          전체 푸시 알림"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s1_switch2" />
+
+    <TextView
+        android:id="@+id/s1_tv_state1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginLeft="155dp"
+        android:text="꺼짐"
+        app:layout_constraintBottom_toBottomOf="@+id/s1_switch1"
+        app:layout_constraintStart_toStartOf="@+id/s1_switch1"
+        app:layout_constraintTop_toTopOf="@+id/s1_switch1" />
+
+    <TextView
+        android:id="@+id/s1_tv_state2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="꺼짐"
+        app:layout_constraintBottom_toBottomOf="@+id/s1_switch2"
+        app:layout_constraintStart_toStartOf="@+id/s1_tv_state1"
+        app:layout_constraintTop_toTopOf="@+id/s1_switch2" />
+
+    <TextView
+        android:id="@+id/s1_tv_state3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:text="꺼짐"
+        app:layout_constraintBottom_toBottomOf="@+id/s1_switch3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/s1_switch3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

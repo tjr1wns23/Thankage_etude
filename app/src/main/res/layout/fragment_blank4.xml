@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BlankFragment4">
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openMall"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="하트"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/f4_tv_heart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:text="heart" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:background="#E2E2E2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="땡기지 몰" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#A0A0A0"
+                    android:textSize="12sp"
+                    android:text="쇼핑몰로 이동 " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F84949"
+                    android:textSize="14sp"
+                    android:text=">" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp" >
+
+                <ImageView
+                    android:id="@+id/f4_banner_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/f4_sale_banner" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="180dp"
+                    android:layout_height="195dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/f4_cookim_pot_24cm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="쿠킴 세라믹 코팅 냄비 24cm 양수"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="33,000원" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="180dp"
+                    android:layout_height="195dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/f4_heeyeon_cosmetics" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="희연 화장품 3종 세트"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="99,000원" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="#F84949"
+                    android:text="하트 사용시 49,500원" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="180dp"
+                    android:layout_height="195dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/f4_one_nature_handcream" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="원네이처 SUPIA 핸드크림(50g)"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="6,000원" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="180dp"
+                    android:layout_height="195dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/f4_pika_28cm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="피카 후라이팬 28cm"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="60,000원" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="295dp"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="180dp"
+                    android:layout_height="195dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/f4_supia_cream" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="수피아 블랙 티페라 영양 크림 (50g)"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:text="129,000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:textColor="#F84949"
+                    android:text="하트 사용시 64,500원" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="더 많은 상품 보기 "
+                    android:textColor="#A0A0A0"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F84949"
+                    android:textSize="17sp"
+                    android:text=">" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--    출처: https://yollo.tistory.com/6 [욜로]-->
+
+</FrameLayout>
